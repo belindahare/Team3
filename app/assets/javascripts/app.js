@@ -1,12 +1,8 @@
-#= require_self
-#= require_tree ./controllers/home
-#= require_tree ./services/home
-
 console.log("app.js");
 
 angular.module("team3-ng-features",
     [
-        "ng-Route"
+        "ngRoute"
 
     ])
     .config( function($routeProvider) {
