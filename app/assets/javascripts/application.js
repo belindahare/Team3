@@ -10,7 +10,14 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery
+
+//= require jquery.min
 //= require jquery_ujs
+//= require angular
+//= require angular-route.min
+//= require jquery.cookie
+//= require jquery.placeholder
+//= require ui-bootstrap.min
+
 
 //= require_tree .
