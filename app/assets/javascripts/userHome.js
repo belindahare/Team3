@@ -1,4 +1,4 @@
-angualr.module("team3-ng-userHome",
+angular.module("team3-ng-userHome",
     [
         "ng-Route"
     ])
