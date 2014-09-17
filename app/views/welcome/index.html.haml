@@ -9,11 +9,11 @@
 /     = user.username
 /     = link_to "Add Friend", friendships_path(friend_id: :user), method: :post
 
-  / - @user.friendships.each do |friendship| 
-  /   %li
-  /     = friendship.friend.username
-  /     = link_to "remove", friendship, method: :delete
-  / this is our user's friend list being displayed to them.  This should be styled in the 3rd box on our landing page! 
+/ - @user.friendships.each do |friendship| 
+/   %li
+/     = friendship.friend.username
+/     = link_to "remove", friendship, method: :delete
+/ this is our user's friend list being displayed to them.  This should be styled in the 3rd box on our landing page! 
 
 .container{ ng: {view: ""}}
 
