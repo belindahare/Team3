@@ -6,7 +6,6 @@ console.log("app.js");
 
 angular.module("team3-ng-features",
     [
-        "$httpProvider",
         "ng-Route"
 
     ])
