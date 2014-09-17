@@ -1,5 +1,5 @@
 console.log("user controller");
-angular.module("team3-ng-userHome")
+angular.module("team3-ng-features")
 
     .controller("userHomeCtrl", function($scope, $rootScope, $log, $routeParams, $location, $interval, userHomeSvc, redditSvc) {
 

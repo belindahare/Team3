@@ -19,5 +19,17 @@
 //= require jquery.placeholder
 //= require ui-bootstrap.min
 
+//= require jquery/dist/jquery.min
+//= require jquery_ujs
+//= require angular/angular
+//= require angular-route/angular-route
+//= require jquery.cookie/jquery.cookie
+//= require jquery-placeholder/jquery.placeholder
+//= require ui-bootstrap.min
 
-//= require_tree .
+
+
+//= require app
+//= require_tree ./controllers
+//= require_tree ./services
+

@@ -16,16 +16,14 @@ Rails.application.routes.draw do
   #   resources :products
 
   # Example resource route with options:
-  #   resources :products do
-  #     member do
-  #       get 'short'
-  #       post 'toggle'
-  #     end
-  #
-  #     collection do
-  #       get 'sold'
-  #     end
-  #   end
+    # resources :users do
+    #   member do
+    #     post :create_friendship
+    #     delete :delete_friendship
+    #   end
+    # end
+    resources :users
+    resources :friendships
 
   # Example resource route with sub-resources:
   #   resources :products do
