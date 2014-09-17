@@ -12,5 +12,11 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require angular.min
+//= require angular-route.min
+//= require jquery.min
+//= require jquery.cookie
+//= require jquery.placeholder
+//= require ui-bootstrap.min
 
 //= require_tree .
