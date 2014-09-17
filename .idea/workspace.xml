@@ -2,19 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe5ed070-2a5c-4c02-ba0c-bbca94b924e4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/javascripts/angular-route/angular-route.min.js.map" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/welcome.js.coffee" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/javascripts/controllers/homeCtrl.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/controllers/home/homeCtrl.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/javascripts/controllers/userHomeCtrl.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/controllers/userHome/userHomeCtrl.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/javascripts/services/homeSvc.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/services/home/homeSvc.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/javascripts/services/redditSvc.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/services/userHome/redditSvc.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/javascripts/services/userHomeSvc.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/services/userHome/userHomeSvc.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/templates/home.html" afterPath="$PROJECT_DIR$/app/assets/templates/home/home.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/templates/userHome.html" afterPath="$PROJECT_DIR$/app/assets/templates/userHome/userHome.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/app.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.haml" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/welcome/index.html.haml" afterPath="$PROJECT_DIR$/app/views/welcome/index.html.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/userHome.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/userHome.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -220,8 +207,8 @@
           <file leaf-file-name="userHome.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/assets/javascripts/userHome.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.15966387" vertical-offset="3" max-vertical-offset="360">
-                  <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -269,9 +256,9 @@
         <option value="$PROJECT_DIR$/app/assets/javascripts/app.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/controllers/home/homeCtrl.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/services/home/homeSvc.js" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/userHome.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/controllers/userHome/userHomeCtrl.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/services/userHome/userHomeSvc.js" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/userHome.js" />
       </list>
     </option>
   </component>
@@ -1276,8 +1263,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/userHome.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15966387" vertical-offset="3" max-vertical-offset="360">
-          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
