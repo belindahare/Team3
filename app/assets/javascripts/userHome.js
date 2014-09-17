@@ -1,3 +1,9 @@
+#= require_self
+#= require_tree ./controllers/userHome
+#= require_tree ./services/userHome
+
+console.log("user.js");
+
 angular.module("team3-ng-userHome",
     [
         "ng-Route"
@@ -7,7 +13,7 @@ angular.module("team3-ng-userHome",
         $routeProvider
 
             .when("/:id", {
-                templateUrl: "../templates/userHome.html",
+                templateUrl: "../assets/userHome/userHome.html",
                 controller: "userHomeCtrl"
             });
     });
