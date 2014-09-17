@@ -6,7 +6,7 @@ console.log("app.js");
 
 angular.module("team3-ng-features",
     [
-//        "team3-ng-userHome",
+        "$httpProvider",
         "ng-Route"
 
     ])
@@ -15,8 +15,12 @@ angular.module("team3-ng-features",
         $routeProvider
 
             .when("/", {
-                templateUrl: "../assests/home/home.html",
+                templateUrl: "../assets/home/home.html",
                 controller: "homeCtrl"
+            })
+            .when("/:id", {
+                templateUrl: "../assets/userHome/userHome.html",
+                controller: "userHomeCtrl"
             })
             .otherwise( {
                 redirectTo: "/"

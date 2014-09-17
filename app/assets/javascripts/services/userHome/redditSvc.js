@@ -1,4 +1,4 @@
-angular.module("team3-ng-userHome")
+angular.module("team3-ng-features")
     .factory("redditSvc", function($http, $rootScope, $log) {
 
         var subReddit = "hockey";
