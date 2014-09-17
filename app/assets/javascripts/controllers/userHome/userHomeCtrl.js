@@ -1,3 +1,4 @@
+console.log("user controller");
 angular.module("team3-ng-userHome")
 
     .controller("userHomeCtrl", function($scope, $rootScope, $log, $routeParams, $location, $interval, userHomeSvc, redditSvc) {
@@ -7,7 +8,7 @@ angular.module("team3-ng-userHome")
 
         redditSvc.getReddit().then(function(items) {
             $log.info(items);
-            $scope.cartItems = items.data;
+            $scope.redditData = items.data;
 
         });
     });

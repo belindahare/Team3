@@ -1,6 +1,12 @@
+#= require_self
+#= require_tree ./controllers/home
+#= require_tree ./services/home
+
+console.log("app.js");
+
 angular.module("team3-ng-features",
     [
-        "team3-ng-userHome",
+//        "team3-ng-userHome",
         "ng-Route"
 
     ])
@@ -9,7 +15,7 @@ angular.module("team3-ng-features",
         $routeProvider
 
             .when("/", {
-                templateUrl: "../templates/home.html",
+                templateUrl: "../assests/home/home.html",
                 controller: "homeCtrl"
             })
             .otherwise( {
@@ -18,3 +24,5 @@ angular.module("team3-ng-features",
 
 
     });
+
+console.log("here again");

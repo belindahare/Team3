@@ -5,3 +5,5 @@ angular.module("team3-ng-features")
         $log.info("home controller is go");
 
     });
+
+console.log("ctrl features");

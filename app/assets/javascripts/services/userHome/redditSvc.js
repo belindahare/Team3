@@ -1,5 +1,5 @@
-angular.module("brendan-httpCart")
-    .factory("httpCartSvc", function($http, $rootScope, $log) {
+angular.module("team3-ng-userHome")
+    .factory("redditSvc", function($http, $rootScope, $log) {
 
         var subReddit = "hockey";
         var urlBase = "http://www.reddit.com/r/" + subreddit + ".json";
