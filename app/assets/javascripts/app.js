@@ -1,7 +1,8 @@
+console.log("app.js");
+
 angular.module("team3-ng-features",
     [
-        "team3-ng-userHome",
-        "ng-Route"
+        "ngRoute"
 
     ])
     .config( function($routeProvider) {
@@ -9,8 +10,12 @@ angular.module("team3-ng-features",
         $routeProvider
 
             .when("/", {
-                templateUrl: "../templates/home.html",
+                templateUrl: "../assets/home/home.html",
                 controller: "homeCtrl"
+            })
+            .when("/:id", {
+                templateUrl: "../assets/userHome/userHome.html",
+                controller: "userHomeCtrl"
             })
             .otherwise( {
                 redirectTo: "/"
@@ -18,3 +23,5 @@ angular.module("team3-ng-features",
 
 
     });
+
+console.log("here again");
