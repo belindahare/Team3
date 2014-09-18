@@ -1,20 +1,8 @@
-<<<<<<< HEAD
-#= require_self
-#= require_tree ./controllers/home
-#= require_tree ./services/home
-
-=======
->>>>>>> 2029b21d652e266447fb51e8c9a41adf6b3cb891
 console.log("app.js");
 
 angular.module("team3-ng-features",
     [
-<<<<<<< HEAD
-//        "team3-ng-userHome",
-        "ng-Route"
-=======
         "ngRoute"
->>>>>>> 2029b21d652e266447fb51e8c9a41adf6b3cb891
 
     ])
     .config( function($routeProvider) {
@@ -22,11 +10,7 @@ angular.module("team3-ng-features",
         $routeProvider
 
             .when("/", {
-<<<<<<< HEAD
-                templateUrl: "../assests/home/home.html",
-=======
                 templateUrl: "../assets/home/home.html",
->>>>>>> 2029b21d652e266447fb51e8c9a41adf6b3cb891
                 controller: "homeCtrl"
             })
             .when("/:id", {
@@ -39,5 +23,25 @@ angular.module("team3-ng-features",
 
 
     });
+    $(document).ready(function(){
+      $.ajax({
+        url:'http://www.reddit.com/r/CatsStandingUp.json',
+        mothod:'GET',
+        success:function (data){
+          var catUp = "<ul>"
+          for(var i = 0; i < 6; i++){
+            catUp +=
+              "<li>" + "<img src=\""
+              + data.data.children[i].data.thumbnail + "\">" + "</li>"
+          }
 
-console.log("here again");
+          catUp += '</ul>';
+
+          $(".cats").html(catUp);
+          console.log(data.data.children[i].data.thumbnail)
+        }
+
+      });
+
+
+    });
