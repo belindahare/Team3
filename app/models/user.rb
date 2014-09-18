@@ -20,7 +20,7 @@ class User < ActiveRecord::Base
   end
 
   has_many :friendships
-  has_many :friends, through: :friendships
+  has_many :users, through: :friendships
   #this has_many is creating a relationship between user and their friendships, their friendships are with other users(ie: friends)
 
 end
