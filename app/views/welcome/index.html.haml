@@ -9,7 +9,7 @@
       = link_to "Add Friend", friendships_path(friend_id: :user), method: :post
       %br
 - current_user.friendships.each do |friendship| 
-  = friendship.friend.email
+  = friendship.email
   %br  
   = friendship.workflow_state
   = link_to "remove", friendship, method: :delete
