@@ -35,6 +35,21 @@ angular.module("team3-ng-features")
             });
         };
 
+
+        $scope.gitUser = "calweb";
+        redditSvc.getGit($scope.gitUser).then(function(posts) {
+            $log.info(posts.data);
+            $scope.gitPosts = posts.data;
+        });
+
+        $scope.getTheGit = function (y) {
+            redditSvc.getGit(y).then(function(posts) {
+                $log.info(posts.data);
+                $scope.gitPosts = posts.data;
+
+            });
+        };
+
     });
 
 console.log("ctrl features");

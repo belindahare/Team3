@@ -11,11 +11,15 @@ angular.module("team3-ng-features")
             return $http.get(urlBaseContent);
         };
 
+        var getGit = function (z) {
+            var urlBaseGit = "https://api.github.com/users/" + z + "/repos";
+            return $http.get(urlBaseGit);
+        }
+
         return {
             getReddit: getReddit,
-            //subRedditName: subReddit,
             getRedditContent: getRedditContent,
-            //subRedditContentName: subRedditContent
+            getGit: getGit
         }
 
     });

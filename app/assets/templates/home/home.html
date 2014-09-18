@@ -12,12 +12,12 @@
                 <input class="wide cl-white" type="text" ng-model="subRedditName" placeholder="Images Subreddit"/>
                 <input ng-hide="true" type="submit"></input>
             </form>
-            <section class="bg-lightGreen ovrflw-y sm-padding sm-margin shadow">
+            <section class="bg-lightGreen sm-padding sm-margin shadow">
                   <h3>{{subRedditName}}</h3>
-                  <ul class="no-decoration">
+                  <ul class="no-decoration sm-padding ovrflw-y">
                       <li class="clear-right clear-left med-margin" ng-repeat="i in posts | limitTo:20" ng-show="$index > 0">
                           <span class="block">In <a class="clear-right"href="{{i.data.url}}">{{i.data.subreddit}}</a></span>
-                          <img src="{{i.data.thumbnail}}" alt="{{i.data.subreddit}} images"/>
+                          <img style="width: 125px" src="{{i.data.thumbnail}}" alt="{{i.data.subreddit}} images"/>
                       </li>
                   </ul>
             </section>
@@ -27,9 +27,9 @@
                 <input class="wide cl-white" type="text" ng-model="subRedditContentName" placeholder="Images Subreddit"/>
                 <input ng-hide="true" type="submit"></input>
             </form>
-            <section class="bg-green ovrflw-y sm-padding sm-margin shadow">
-                <h3>{{subRedditContentName}}</h3>
-                <ul class="no-decoration">
+            <section class="bg-green sm-padding sm-margin shadow">
+                <h3 >{{subRedditContentName}}</h3>
+                <ul class="no-decoration sm-padding ovrflw-y">
                     <li class="clear-right clear-left" ng-repeat="i in contentPosts | limitTo: 20">
                         <span class="block">In <a class="clear-right"href="{{i.data.url}}">{{i.data.subreddit}}</a></span>
                         <p>{{i.data.title}}"</p>
@@ -39,10 +39,21 @@
             </section>
         </div>
         <div class="col-md-3 high">
-            <section class="ovrflw-y bg-lightGreen sm-padding sm-margin shadow">
-                <h3>box3</h3>
-                <ul>
-                  <li></li>
+            <form ng-submit="getTheGit(gitUser)" action="">
+                <input class="wide cl-white" type="text" ng-model="gitUser" placeholder="Images Subreddit"/>
+                <input ng-hide="true" type="submit"></input>
+            </form>
+            <section class="bg-green sm-padding sm-margin shadow">
+                <h3 id="bigHead" class="no-margin block lg-padding-top">
+                    <span class="lg-margin-top" style="position: relative">{{gitUser}}</span>
+                    <img class="absolute-top-right lg-margin-right" style="width:50px; border-radius: 3px;" src="{{gitPosts[0].owner.avatar_url}}" alt="avatar image of github user"/>
+                </h3>
+                <ul id="bigUl" class="no-decoration sm-padding ovrflw-y">
+                    <li class="clear-right clear-left" ng-repeat="i in gitPosts | limitTo: 20">
+                        <span class="block">In <a class="clear-right"href="{{i.html_url}}">{{i.name}}</a></span>
+                        <p>{{i.description}}"</p>
+                        <hr/>
+                    </li>
                 </ul>
             </section>
         </div>
