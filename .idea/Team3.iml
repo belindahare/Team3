@@ -5,6 +5,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="sass-stdlib" level="application" />
+    <orderEntry type="library" name="Team3 node_modules" level="project" />
   </component>
 </module>
 
