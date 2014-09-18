@@ -4,6 +4,11 @@
   %h2.bg-dk-green.inline.col-md-4.high.no-margin.med-padding 
     - @users.each do |user|
       = user.email
+      - if user.workflow_state == "available"
+        = link_to "Get busy!", get_busy_user_path(user), method: :put
+      - else 
+        = link_to "Become available", become_available_user_path(user), method: :put
+      %br
       = link_to "Add Friend", friendships_path(friend_id: :user), method: :post
       %br
   %ul.no-margin.bg-white.block.col-md-8.high.med-padding.no-decoration
@@ -20,5 +25,6 @@
   - current_user.friendships.each do |friendship| 
     = friendship.friend.email
     %br  
-    /= friendship.workflow_state
+    = friendship.workflow_state
+
     /= link_to "remove", friendship, method: :delete
