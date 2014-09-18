@@ -1,3 +1,6 @@
+body {
+  font-family: "Josefin Sans", sans-serif; }
+
 .inline {
   display: inline-block;
   position: relative; }
@@ -131,13 +134,13 @@
   text-align: center; }
 
 .light {
-  font-weight: 200; }
+  font-weight: 300; }
 
 .medium {
-  font-wieght: 300; }
+  font-wieght: 400; }
 
 .heavy {
-  font-weight: 700; }
+  font-weight: 600; }
 
 .cl-white {
   color: white; }
@@ -149,13 +152,13 @@
   color: red; }
 
 .cl-green {
-  color: green; }
+  color: #53bf6b; }
 
 .cl-white {
   color: white; }
 
 .cl-dkgrey {
-  color: darkgrey; }
+  color: #999999; }
 
 .cl-black {
   color: black; }
@@ -170,13 +173,13 @@
   background-color: red; }
 
 .bg-green {
-  background-color: green; }
+  background-color: #53bf6b; }
 
 .bg-white {
   background-color: white; }
 
 .bg-dkgrey {
-  background-color: darkgrey; }
+  background-color: #999999; }
 
 .bg-black {
   background-color: black; }

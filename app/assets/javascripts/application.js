@@ -18,6 +18,7 @@
 //= require jquery.cookie/jquery.cookie
 //= require jquery-placeholder/jquery.placeholder
 //= require ui-bootstrap.min
+//= require bootstrap/bootstrap.min
 
 
 

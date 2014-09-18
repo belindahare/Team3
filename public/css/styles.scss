@@ -1,9 +1,16 @@
 $blue: blue;
 $red: red;
-$green: green;
+$lightGreen: #3fa757;
+$green: #53bf6b;
+$darkgreen: #19763E;
 $white: white;
-$darkGrey: darkgrey;
+$darkGrey: #999999;
 $black: black;
+$font: 'Josefin Sans', sans-serif;
+
+body {
+  font-family: $font;
+}
 
 /* Layouts and disign classes
 ///////////////////////////////////////////////////////////////// */
@@ -149,13 +156,13 @@ $black: black;
   text-align: center;
 }
 .light {
-  font-weight: 200;
+  font-weight: 300;
 }
 .medium {
-  font-wieght:300;
+  font-wieght:400;
 }
 .heavy {
-  font-weight:700;
+  font-weight:600;
 }
 
 /* Font Color classes
