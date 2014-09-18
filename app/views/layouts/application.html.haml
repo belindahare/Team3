@@ -1,15 +1,5 @@
 !!!
 %html{:lang => "en", :ng => {app:"team3-ng-features"}}
-<<<<<<< HEAD
-  %body
-  #fullPage
-    %p
-      }
-    %title GroupProject
-    = stylesheet_link_tag    'application'
-    = javascript_include_tag 'application'
-    = csrf_meta_tags
-=======
   %head
     %title Team3
     %link{"data-require" => "bootstrap-css", "data-semver" => "3.1.1", :href => "//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css", :rel => "stylesheet"}/
@@ -20,10 +10,7 @@
     = csrf_meta_tags
     %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}
   %body{"ng-javascript" => "team3-ng-features"}
->>>>>>> 9b4259ea19d4209f781f79e5dd34f9977efe2241
-    = login_links
+    %div.navHead
+      = login_links
+      %h1 @home
     = yield
-    %p.notice
-      = notice
-    %p.alert
-      = alert
