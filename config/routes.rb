@@ -22,11 +22,12 @@ Rails.application.routes.draw do
     #     delete :delete_friendship
     #   end
     # end
-    resources :users
+    resources :users do
       member do 
         put :become_available
         put :get_busy
       end
+    end
     resources :friendships
 
   # Example resource route with sub-resources:
