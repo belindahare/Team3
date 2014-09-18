@@ -23,5 +23,25 @@ angular.module("team3-ng-features",
 
 
     });
+    $(document).ready(function(){
+      $.ajax({
+        url:'http://www.reddit.com/r/CatsStandingUp.json',
+        mothod:'GET',
+        success:function (data){
+          var catUp = "<ul>"
+          for(var i = 0; i < 6; i++){
+            catUp +=
+              "<li>" + "<img src=\""
+              + data.data.children[i].data.thumbnail + "\">" + "</li>"
+          }
 
-console.log("here again");
+          catUp += '</ul>';
+
+          $(".cats").html(catUp);
+          console.log(data.data.children[i].data.thumbnail)
+        }
+
+      });
+
+
+    });
