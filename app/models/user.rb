@@ -6,6 +6,7 @@ class User < ActiveRecord::Base
 
   validates :email, presence: true
 
+# this workflow  is allowing us to display whether or not your friends are available
  include Workflow
   workflow do
 
