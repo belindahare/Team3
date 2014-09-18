@@ -1,8 +1,8 @@
 %div.wide{ ng: {view: ""}}
 %br
 %div.row#users.shadow
-  %h2.bg-dk-green.inline.col-md-4.high.no-margin.med-padding List of Users, please rename this!
-  %ul.no-margin.bg-white.block.col-md-8.high.med-padding.no-decoration
+  %h2.inline.col-md-4.high.no-margin.med-padding List of Users, please rename this!
+  %ul.no-margin.block.col-md-8.high.med-padding.no-decoration
     %li.no-decoration words
     %li.no-decoration more words
   %br
@@ -10,7 +10,7 @@
     = user.email
     = link_to "Add Friend", friendships_path(friend_id: :user), method: :post
     %br
-  - current_user.friendships.each do |friendship| 
+  - current_user.friendships.each do |friendship|
     / = friendship.email
     %br  
     = friendship.workflow_state

@@ -48,7 +48,7 @@ angular.module("team3-ng-features",
         mothod:'GET',
         success:function (data){
           var newsR = "<ul>"
-          for(var i = 0; i < 4; i++){
+          for(var i = 0; i < 10; i++){
             newsR +=
             "<li>" + data.data.children[i].data.title + "</li>" +
             "<li>" + "<a>" + data.data.children[i].data.url + "</a>" + "</li>"

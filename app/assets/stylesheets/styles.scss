@@ -1,7 +1,7 @@
 $lightGreen: #ccdddd;
 $green: #aacccc;
 $darkGreen: #426262;
-$white: #eeeeee;
+$lightGreen: #eeeeee;
 $purple: #95738C;
 $grey: #dddddd;
 $darkGrey: #999999;
@@ -212,11 +212,11 @@ $font: 'Josefin Sans', sans-serif;
 
 /* Font Color classes
 ///////////////////////////// */
-.cl-white {
-  color: $white;
+.cl-lightGreen {
+  color: $lightGreen;
 }
-.cl-white-hover:hover {
-  color: $white;
+.cl-lightGreen-hover:hover {
+  color: $lightGreen;
 }
 .cl-purple {
   color: $purple;
@@ -257,7 +257,7 @@ $font: 'Josefin Sans', sans-serif;
 
 /* Background Color classes
 ///////////////////////////// */
-.bg-white {
+.bg-lightGreen {
   background-color: rgba(238,238,238,0.35);
 }
 .bg-dk-green {
@@ -288,7 +288,7 @@ $font: 'Josefin Sans', sans-serif;
 ///////////////////////////////////////////////////////////////// */
 .button {
   background-color: $green;
-  color: $white;
+  color: $lightGreen;
   padding: 10px;
   transition: 0.3s;
 }
@@ -296,15 +296,22 @@ $font: 'Josefin Sans', sans-serif;
    background-color:$darkGreen;
 }
 body {
-  background-image: url(http://i.imgur.com/xHUWtT0.jpg);
+  background-image: url(http://cdn.clemensotto.com/codepen/img/1.jpg);
   font-family: $font !important;
 }
+
 .navHead{
   width:100%;
   height:100px;
 }
 #users {
+  width:90%;
+  margin-left:5%;
   height:150px;
+}
+h1 .logo{
+  font-size:1.5em;
+  float:right;
 }
 
 /* ng-View Design
@@ -323,25 +330,15 @@ body {
       }
     }
     section {
-      h3 {
-        height:15px;
-      }
+      min-height: 249px;
+      max-height: 250px;
       ul {
-        min-height: 219px;
-        max-height: 220px;
         li {
           list-style-type:none;
           img {
             width: 150px;
           }
         }
-      }
-      #bigUl {
-        min-height:0;
-        max-height: 214px;
-      }
-      #bigHead {
-        height: 50px;
       }
     }
   }
@@ -351,6 +348,7 @@ body {
     height: 75px;
   }
 }
+
 
 /* Responsive Design
 ///////////////////////////////////////////////////////////////// */
