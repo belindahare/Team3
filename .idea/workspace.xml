@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe5ed070-2a5c-4c02-ba0c-bbca94b924e4" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/.sass-cache/1f4f37351a1798f1af3bd52d9a3e3bd99e8fc681/styles.scssc" afterPath="$PROJECT_DIR$/app/assets/stylesheets/.sass-cache/1f4f37351a1798f1af3bd52d9a3e3bd99e8fc681/styles.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/app.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/templates/home/home.html" afterPath="$PROJECT_DIR$/app/assets/templates/home/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/controllers/home/homeCtrl.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/controllers/home/homeCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/services/userHome/redditSvc.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/services/userHome/redditSvc.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/templates/userHome/userHome.html" afterPath="$PROJECT_DIR$/app/assets/templates/userHome/userHome.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/styles.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/styles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/styles.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/styles.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Team3.iws" />
@@ -34,18 +35,18 @@
           <file leaf-file-name="styles.css" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/styles.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="3819" max-vertical-offset="4515">
-                  <caret line="295" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="295" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="3864" max-vertical-offset="4560">
+                  <caret line="298" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="298" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="styles.scss" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="styles.scss" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/styles.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-82.04082" vertical-offset="300" max-vertical-offset="5460">
-                  <caret line="288" column="7" selection-start-line="288" selection-start-column="1" selection-end-line="288" selection-end-column="7" />
+                <state vertical-scroll-proportion="0.62447846" vertical-offset="4426" max-vertical-offset="5550">
+                  <caret line="325" column="19" selection-start-line="325" selection-start-column="19" selection-end-line="325" selection-end-column="19" />
                   <folding />
                 </state>
               </provider>
@@ -81,10 +82,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="homeCtrl.js" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="homeCtrl.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/assets/javascripts/controllers/home/homeCtrl.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.7363254" vertical-offset="0" max-vertical-offset="713">
+                <state vertical-scroll-proportion="-9.545455" vertical-offset="0" max-vertical-offset="675">
                   <caret line="35" column="10" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
                   <folding />
                 </state>
@@ -125,11 +126,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="home.html" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="home.html" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/assets/templates/home/home.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.32258064" vertical-offset="15" max-vertical-offset="1065">
-                  <caret line="17" column="121" selection-start-line="17" selection-start-column="121" selection-end-line="17" selection-end-column="121" />
+                <state vertical-scroll-proportion="0.1733871" vertical-offset="36" max-vertical-offset="1065">
+                  <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
                   <folding />
                 </state>
               </provider>
@@ -198,7 +199,6 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/app.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/styles.scss" />
         <option value="$PROJECT_DIR$/app/views/welcome/index.html.haml" />
         <option value="$PROJECT_DIR$/app/views/welcome/show.html.haml" />
         <option value="$PROJECT_DIR$/app/controllers/welcome_controller.rb" />
@@ -208,6 +208,7 @@
         <option value="$PROJECT_DIR$/app/assets/javascripts/services/userHome/redditSvc.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/controllers/home/homeCtrl.js" />
         <option value="$PROJECT_DIR$/app/assets/templates/home/home.html" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/styles.scss" />
       </list>
     </option>
   </component>
@@ -1093,8 +1094,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3819" max-vertical-offset="4515">
-          <caret line="295" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="295" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="3864" max-vertical-offset="4560">
+          <caret line="298" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="298" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1187,14 +1188,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/styles.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-82.04082" vertical-offset="300" max-vertical-offset="5460">
-          <caret line="288" column="7" selection-start-line="288" selection-start-column="1" selection-end-line="288" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/services/userHome/redditSvc.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
@@ -1205,7 +1198,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/controllers/home/homeCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7363254" vertical-offset="0" max-vertical-offset="713">
+        <state vertical-scroll-proportion="-9.545455" vertical-offset="0" max-vertical-offset="675">
           <caret line="35" column="10" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
           <folding />
         </state>
@@ -1213,8 +1206,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/templates/home/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32258064" vertical-offset="15" max-vertical-offset="1065">
-          <caret line="17" column="121" selection-start-line="17" selection-start-column="121" selection-end-line="17" selection-end-column="121" />
+        <state vertical-scroll-proportion="0.1733871" vertical-offset="36" max-vertical-offset="1065">
+          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.62447846" vertical-offset="4426" max-vertical-offset="5550">
+          <caret line="325" column="19" selection-start-line="325" selection-start-column="19" selection-end-line="325" selection-end-column="19" />
           <folding />
         </state>
       </provider>

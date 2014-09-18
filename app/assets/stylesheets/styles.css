@@ -278,9 +278,12 @@ body {
 .holder article {
   margin-top: 0;
   height: 400px; }
+  .holder article form input {
+    background-color: rgba(0, 0, 0, 0.4);
+    border: none; }
   .holder article section {
-    min-height: 349px;
-    max-height: 350px; }
+    min-height: 249px;
+    max-height: 250px; }
     .holder article section ul li {
       list-style-type: none; }
       .holder article section ul li img {

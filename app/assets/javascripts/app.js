@@ -31,6 +31,7 @@ angular.module("team3-ng-features",
           var catUp = "<ul>"
           for(var i = 0; i < 4; i++){
             catUp +=
+              "<li>" + data.data.children[i].data.title + "</li>" +
               "<li>" + "<img src=\""
               + data.data.children[i].data.thumbnail + "\">" + "</li>"
           }
@@ -42,6 +43,23 @@ angular.module("team3-ng-features",
         }
 
       });
+      $.ajax({
+        url:'http://www.reddit.com/r/worldnews.json',
+        mothod:'GET',
+        success:function (data){
+          var newsR = "<ul>"
+          for(var i = 0; i < 4; i++){
+            newsR +=
+            "<li>" + data.data.children[i].data.title + "</li>" +
+            "<li>" + "<a>" + data.data.children[i].data.url + "</a>" + "</li>"
+          }
 
+          newsR += '</ul>';
+
+          $(".news").html(newsR);
+          console.log(data.data.children[i].data.thumbnail)
+        }
+
+      });
 
     });

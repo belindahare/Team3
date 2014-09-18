@@ -316,9 +316,15 @@ body {
   article {
     margin-top: 0;
     height:400px;
+    form {
+      input {
+        background-color: rgba(0,0,0,0.4);
+        border:none;
+      }
+    }
     section {
-      min-height: 349px;
-      max-height: 350px;
+      min-height: 249px;
+      max-height: 250px;
       ul {
         li {
           list-style-type:none;

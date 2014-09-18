@@ -9,8 +9,8 @@
     <article class="row lg-margin-top lg-margin">
         <div class="col-md-3 high">
             <form ng-submit="getTheReddit(subRedditName)" action="">
-                <input type="text" ng-model="subRedditName" placeholder="Images Subreddit"/>
-                <input type="submit"></input>
+                <input class="wide cl-white" type="text" ng-model="subRedditName" placeholder="Images Subreddit"/>
+                <input ng-hide="true" type="submit"></input>
             </form>
             <section class="bg-lightGreen ovrflw-y sm-padding sm-margin shadow">
                   <h3>{{subRedditName}}</h3>
@@ -24,8 +24,8 @@
         </div>
         <div class="col-md-3 high">
             <form ng-submit="getTheRedditContent(subRedditContentName)" action="">
-                <input type="text" ng-model="subRedditContentName" placeholder="Images Subreddit"/>
-                <input type="submit"></input>
+                <input class="wide cl-white" type="text" ng-model="subRedditContentName" placeholder="Images Subreddit"/>
+                <input ng-hide="true" type="submit"></input>
             </form>
             <section class="bg-green ovrflw-y sm-padding sm-margin shadow">
                 <h3>{{subRedditContentName}}</h3>
