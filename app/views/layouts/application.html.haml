@@ -10,7 +10,7 @@
     = csrf_meta_tags
     %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}
   %body{"ng-javascript" => "team3-ng-features"}
-    = login_links
+    %div.navHead
+      = login_links
+      %h1 @home
     = yield
-    %p.notice= notice
-    %p.alert= alert
