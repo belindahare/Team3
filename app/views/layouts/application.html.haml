@@ -46,6 +46,7 @@
                   %span.sr-only Close
                 %h4#myModalLabel.modal-title Sign up
               .modal-body
+<<<<<<< HEAD
                 %form{:action => ""}
                   %input{:placeholder => "User Name", :type => "text"}/
                   %input{:placeholder => "Password", :type => "text"}/
@@ -54,5 +55,27 @@
               .modal-footer
                 %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"} Close
                 %button.btn.btn-primary{:type => "button"} Save changes
+=======
+                %h2 Log in
+                = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+                  %div
+                    = f.label :email
+                    %br/
+                    = f.email_field :email, autofocus: true
+                  %div
+                    = f.label :password
+                    %br/
+                    = f.password_field :password, autocomplete: "off"
+                  - if devise_mapping.rememberable?
+                    %div
+                      = f.check_box :remember_me
+                      = f.label :remember_me
+                  %hr
+                  = f.submit "Log in", class: "button"
+                = render "devise/shared/links"
+              -#.modal-footer
+                -#%button.btn.btn-default{"data-dismiss" => "modal", :type => "button"} Close
+                -#%button.btn.btn-primary{:type => "button"} Save changes
+>>>>>>> 80dfef16ab366fcb4dd5f828591722c4dfeede32
       %h1.cl-green.text-right.med-padding-right.lg-margin-top.sm-margin-bottom.no-margin @home
     = yield
