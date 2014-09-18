@@ -46,16 +46,8 @@
                   %span.sr-only Close
                 %h4#myModalLabel.modal-title Sign up
               .modal-body
-<<<<<<< HEAD
-                %form{:action => ""}
-                  %input{:placeholder => "User Name", :type => "text"}/
-                  %input{:placeholder => "Password", :type => "text"}/
-                  %a.cl-green-hover.cl-dk-green{"data-target" => "#myModal", "data-toggle" => "modal", :href => ""} Forgot My Password
-                  %button.button Submit
-              .modal-footer
-                %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"} Close
-                %button.btn.btn-primary{:type => "button"} Save changes
-=======
+
+ 
                 %h2 Log in
                 = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
                   %div
@@ -76,6 +68,6 @@
               -#.modal-footer
                 -#%button.btn.btn-default{"data-dismiss" => "modal", :type => "button"} Close
                 -#%button.btn.btn-primary{:type => "button"} Save changes
->>>>>>> 80dfef16ab366fcb4dd5f828591722c4dfeede32
+
       %h1.cl-green.text-right.med-padding-right.lg-margin-top.sm-margin-bottom.no-margin @home
     = yield
