@@ -1,51 +1,65 @@
+<div class="holder wide med-margin lg-padding-right lg-padding-top">
+    <!--<div class="social row lg-margin shadow bg-grey-solid">-->
+        <!--<div class="inline col-md-3">Link in Facebook Account</div>-->
+        <!--<div class="inline col-md-3">Link in Twitter Account</div>-->
+        <!--<div class="inline col-md-3">Link in other media</div>-->
+        <!--<div class="inline col-md-3">link to random page</div>-->
+    <!--</div>-->
 
-  <div class="container">
-      <div class="container">
-          <header class="bg-black">
-              <span class="cl-white float-left">Person's name</span>
-              <ul class="inline no-margin float-right cl-white">
-                  <li class="inline"><a href=""><button class="btn cl-white bg-blue">Settings</button></a></li>
-                  <li class="inline"><a href=""><button class="btn cl-white bg-blue">Log-in</button></a></li>
-                  <li class="inline"><a href=""><button class="btn cl-white bg-blue">Log-out</button></a></li>
-              </ul>
-          </header>
-
-          <div class="social">
-              <div class="inline">Link in Facebook Account</div>
-              <div class="inline">Link in Twitter Account</div>
-              <div class="inline">Link in other media</div>
-              <div class="inline">link to random page</div>
-          </div>
-
-          <article>
-              <section>
-                  <h3>Cat.</h3>
-                  <div class="cats"></div>
-              </section>
-              <section>
-                  <h3>box2</h3>
-                  <ul>
-                      <li></li>
+    <article class="row lg-margin-top lg-margin">
+        <div class="col-md-3 high">
+            <form ng-submit="getTheReddit(subRedditName)" action="">
+                <input class="wide cl-white" type="text" ng-model="subRedditName" placeholder="Images Subreddit"/>
+                <input ng-hide="true" type="submit"></input>
+            </form>
+            <section class="bg-lightGreen ovrflw-y sm-padding sm-margin shadow">
+                  <h3>{{subRedditName}}</h3>
+                  <ul class="no-decoration">
+                      <li class="clear-right clear-left med-margin" ng-repeat="i in posts | limitTo:20" ng-show="$index > 0">
+                          <span class="block">In <a class="clear-right"href="{{i.data.url}}">{{i.data.subreddit}}</a></span>
+                          <img src="{{i.data.thumbnail}}" alt="{{i.data.subreddit}} images"/>
+                      </li>
                   </ul>
-              </section>
-              <section>
-                  <h3>box3</h3>
-                  <ul>
-                      <li></li>
-                  </ul>
-              </section>
-              <section>
-                  <h3>box4</h3>
-                  <ul>
-                      <li></li>
-                  </ul>
-              </section>
-          </article>
+            </section>
+        </div>
+        <div class="col-md-3 high">
+            <form ng-submit="getTheRedditContent(subRedditContentName)" action="">
+                <input class="wide cl-white" type="text" ng-model="subRedditContentName" placeholder="Images Subreddit"/>
+                <input ng-hide="true" type="submit"></input>
+            </form>
+            <section class="bg-green ovrflw-y sm-padding sm-margin shadow">
+                <h3>{{subRedditContentName}}</h3>
+                <ul class="no-decoration">
+                    <li class="clear-right clear-left" ng-repeat="i in contentPosts | limitTo: 20">
+                        <span class="block">In <a class="clear-right"href="{{i.data.url}}">{{i.data.subreddit}}</a></span>
+                        <p>{{i.data.title}}"</p>
+                        <hr/>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <div class="col-md-3 high">
+            <section class="ovrflw-y bg-lightGreen sm-padding sm-margin shadow">
+                <h3>box3</h3>
+                <ul>
+                  <li></li>
+                </ul>
+            </section>
+        </div>
+        <div class="col-md-3 high">
+            <section class="ovrflw-y bg-green sm-padding sm-margin shadow">
+                <h3>box4</h3>
+                <ul>
+                    <li></li>
+                </ul>
+            </section>
+        </div>
+    </article>
 
-          <footer>
-              <span class="text-left">left text</span>
-              <span class="text-center"> center text</span>
-              <span class="text-right clear-right"> right text</span>
-              <p class="text-right"><a href="">Log-out</a></p>
-          </footer>
-  </div>
+  <!--<footer class="bg-black wide">-->
+      <!--<span class="text-left">left text</span>-->
+      <!--<span class="text-center"> center text</span>-->
+      <!--<span class="text-right clear-right"> right text</span>-->
+      <!--<p class="text-right"><a href="">Log-out</a></p>-->
+  <!--</footer>-->
+</div>

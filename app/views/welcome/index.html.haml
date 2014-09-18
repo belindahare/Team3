@@ -1,17 +1,24 @@
 %br
-%h2 List of Users, please rename this!
-%ul
-  - @users.each do |user|
-    = user.email
-    = link_to "Add Friend", friendships_path(friend_id: :user), method: :post
-    %br
+%div.row#users.shadow
+  %h2.bg-dk-green.inline.col-md-4.high.no-margin.med-padding List of Users, please rename this!
+  %ul.no-margin.bg-white.block.col-md-8.high.med-padding.no-decoration
+    %li.no-decoration words
+    %li.no-decoration more words
+    - @users.each do |user|
+      = user.email
+      = link_to "Add Friend", friendships_path(friend_id: :user), method: :post
+      %br
 - current_user.friendships.each do |friendship| 
-  = friendship.friend.email
+  = friendship.email
   %br  
   = friendship.workflow_state
   = link_to "remove", friendship, method: :delete
-/ this is our user's friend list being displayed to them.  This should be styled in the 3rd box on our landing page! 
+/ this is our user's friend list being displayed to them.  This should be styled in the 3rd box on our landing page!
+/ - @user.friendships.each do |friendship|
+/  = friendship.friend.email
+/  = link_to "remove", friendship, method: :delete
+/ this is our user's friend list being displayed to them.  This should be styled in the 3rd box on our landing page!
 
 
 
-.container{ ng: {view: ""}}
+%div.wide{ ng: {view: ""}}
