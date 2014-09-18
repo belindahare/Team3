@@ -15,5 +15,5 @@
  *= require bootstrap
  *= require bootstrap-theme
  *= require angular-csp
- *= require styles
+ /**= require styles*/
  */

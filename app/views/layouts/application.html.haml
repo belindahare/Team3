@@ -4,13 +4,20 @@
     %title Team3
     %link{"data-require" => "bootstrap-css", "data-semver" => "3.1.1", :href => "//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css", :rel => "stylesheet"}/
     %link{:href => "//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css", :rel => "stylesheet"}
+    %link{:href => "http://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600", :rel => "stylesheet", :type => "text/css"}/
     %link{:href => "css/styles.scss", :rel => "stylesheet"}
     = stylesheet_link_tag    'application'
     = javascript_include_tag 'application'
     = csrf_meta_tags
     %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}
   %body{"ng-javascript" => "team3-ng-features"}
-    %div.navHead
-      = login_links
-      %h1 @home
+    %div.navHead.block.bg-black.lg-padding.no-margin.heavy.cl-green
+      -#= login_links
+      %p.absolute-top-left
+        %a.sm-padding-right.cl-light-green.light.tall.cl-green-hover{:href => "/users/Log_in"} Log In
+        |
+        %a.sm-padding-left.cl-light-green.light.tall.cl-green-hover{:href => "/users/sign_in"} Sign up
+        |
+        %a.sm-padding-left.cl-light-green.light.tall.cl-green-hover{:href => "/users/settings"} Settings
+      %h1.cl-green.text-right.med-padding-right.lg-margin-top.sm-margin-bottom.no-margin @home
     = yield
