@@ -1,15 +1,16 @@
 %br
-%h2 see who's @home.
-/ %ul
-/   - @users do |user|
-/   %li
-/     = user.username
-/     = link_to "Add Friend", friendships_path(friend_id: :user), method: :post
+%h2 List of Users, please rename this!
+%ul
+  - @users.each do |user|
+    = user.email
+    = link_to "Add Friend", friendships_path(friend_id: :user), method: :post
+    %br
 
 / - @user.friendships.each do |friendship|
-/   %li
-/     = friendship.friend.username
-/     = link_to "remove", friendship, method: :delete
+/  = friendship.friend.email
+/  = link_to "remove", friendship, method: :delete
 / this is our user's friend list being displayed to them.  This should be styled in the 3rd box on our landing page!
+
+
 
 .container{ ng: {view: ""}}
