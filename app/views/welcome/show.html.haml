@@ -1,17 +1,24 @@
 %div.wide{ ng: {view: ""}}
 %br
 %div.row#users.shadow
-  %h2.bg-dk-green.inline.col-md-4.high.no-margin.med-padding List of Users, please rename this!
+  %h2.bg-dk-green.inline.col-md-4.high.no-margin.med-padding 
+    - @users.each do |user|
+      = user.email
+      = link_to "Add Friend", friendships_path(friend_id: :user), method: :post
+      %br
   %ul.no-margin.bg-white.block.col-md-8.high.med-padding.no-decoration
-    %li.no-decoration words
+    %li.no-decoration
+      Friends:
+      %br 
+      - current_user.friendships.each do |friendship| 
+        = friendship.friend.email
+    %br  
+
     %li.no-decoration more words
   %br
-  - @users.each do |user|
-    = user.email
-    = link_to "Add Friend", friendships_path(friend_id: :user), method: :post
-    %br
+  
   - current_user.friendships.each do |friendship| 
-    = friendship.email
+    = friendship.friend.email
     %br  
-    = friendship.workflow_state
-    = link_to "remove", friendship, method: :delete
+    /= friendship.workflow_state
+    /= link_to "remove", friendship, method: :delete
