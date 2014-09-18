@@ -6,5 +6,8 @@ class WelcomeController < ApplicationController
     @friendships = Friendship.all
     #need this to display the users on the welcome index page
   end
-
+  private
+    def user_params
+    params.require(:user).permit(:email)
+  end
 end
