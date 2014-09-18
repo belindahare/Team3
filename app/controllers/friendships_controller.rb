@@ -23,5 +23,9 @@ def destroy
   flash[:notice] = "Removed friend from your @home list!"
   redirect_to current_user
 end
+# private
+#     def friendship_params
+#     params.require(:user).permit(:friend)
+#   end
 end
 #this controller is giving us the ability to create relationships between the users.  It also gives users the ability to add and delete people from their friends list
