@@ -281,13 +281,20 @@ body {
   .holder article form input {
     background-color: rgba(0, 0, 0, 0.4);
     border: none; }
-  .holder article section {
-    min-height: 249px;
-    max-height: 250px; }
+  .holder article section h3 {
+    height: 15px; }
+  .holder article section ul {
+    min-height: 219px;
+    max-height: 220px; }
     .holder article section ul li {
       list-style-type: none; }
       .holder article section ul li img {
         width: 150px; }
+  .holder article section #bigUl {
+    min-height: 0;
+    max-height: 214px; }
+  .holder article section #bigHead {
+    height: 50px; }
 .holder footer {
   position: absolute;
   bottom: 0px;
