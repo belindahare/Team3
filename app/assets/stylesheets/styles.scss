@@ -323,15 +323,25 @@ body {
       }
     }
     section {
-      min-height: 249px;
-      max-height: 250px;
+      h3 {
+        height:15px;
+      }
       ul {
+        min-height: 219px;
+        max-height: 220px;
         li {
           list-style-type:none;
           img {
             width: 150px;
           }
         }
+      }
+      #bigUl {
+        min-height:0;
+        max-height: 214px;
+      }
+      #bigHead {
+        height: 50px;
       }
     }
   }
