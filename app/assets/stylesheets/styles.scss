@@ -299,6 +299,15 @@ body {
   background-image: url(http://cdn.clemensotto.com/codepen/img/1.jpg);
   font-family: $font !important;
 }
+a {
+  color: #F9ECFF;
+}
+a:hover {
+  color: #F3C8FF;
+}
+h3 {
+  color: #F9ECFF;
+}
 
 .navHead{
   width:100%;
@@ -309,9 +318,9 @@ body {
   margin-left:5%;
   height:150px;
 }
-h1 .logo{
-  font-size:1.5em;
-  float:right;
+.logo{
+  font-size:2.5em;
+  text-align:right;
 }
 
 /* ng-View Design
@@ -319,17 +328,18 @@ h1 .logo{
 .holder {
   #clock {
     font-size:75px;
-    width:225px
+    width:225px;
+    margin-right: 20px;
   }
   #pm {
     font-size: 20px;
+    width:40px;
   }
   .social {
     height:50px;
   }
   article {
     margin-top: 0;
-    height:400px;
     form {
       input {
         background-color: rgba(0,0,0,0.4);
@@ -340,12 +350,16 @@ h1 .logo{
       min-height: 249px;
       max-height: 250px;
       ul {
+        max-height: 190px;
         li {
           list-style-type:none;
           img {
             width: 150px;
           }
         }
+      }
+      #bigUl {
+        max-height: 200px;
       }
     }
   }

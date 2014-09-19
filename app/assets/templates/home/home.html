@@ -11,7 +11,7 @@
     </h1>
 
     <article class="row lg-margin-top lg-margin">
-        <div class="col-md-3 high">
+        <div class="col-md-3">
             <form ng-submit="getTheReddit(subRedditName)" action="">
                 <input class="wide cl-white" type="text" ng-model="subRedditName" placeholder="Images Subreddit"/>
                 <input ng-hide="true" type="submit"></input>
@@ -26,7 +26,7 @@
                   </ul>
             </section>
         </div>
-        <div class="col-md-3 high">
+        <div class="col-md-3">
             <form ng-submit="getTheRedditContent(subRedditContentName)" action="">
                 <input class="wide cl-white" type="text" ng-model="subRedditContentName" placeholder="Images Subreddit"/>
                 <input ng-hide="true" type="submit"></input>
@@ -42,7 +42,7 @@
                 </ul>
             </section>
         </div>
-        <div class="col-md-3 high">
+        <div class="col-md-3">
             <form ng-submit="getTheGit(gitUser)" action="">
                 <input class="wide cl-white" type="text" ng-model="gitUser" placeholder="Images Subreddit"/>
                 <input ng-hide="true" type="submit"></input>
@@ -50,7 +50,7 @@
             <section class="sm-padding sm-margin shadow">
                 <h3 id="bigHead" class="no-margin block lg-padding-top">
                     <span class="lg-margin-top" style="position: relative">{{gitUser}}</span>
-                    <img class="absolute-top-right lg-margin-right" style="width:50px; border-radius: 3px;" src="{{gitPosts[0].owner.avatar_url}}" alt="avatar image of github user"/>
+                    <img class="absolute-top-right med-margin-right" style="z-index:5; width:50px; border-radius: 3px;" src="{{gitPosts[0].owner.avatar_url}}" alt="avatar image of github user"/>
                 </h3>
                 <ul id="bigUl" class="no-decoration sm-padding ovrflw-y">
                     <li class="clear-right clear-left" ng-repeat="i in gitPosts | limitTo: 20">
@@ -61,9 +61,13 @@
                 </ul>
             </section>
         </div>
-        <div class="col-md-3 high">
+        <div class="col-md-3">
+            <form ng-submit="" action="">
+                <input class="wide cl-white" type="text" ng-model="gitUser" placeholder="Coming Sonn..."/>
+                <input ng-hide="true" type="submit"></input>
+            </form>
             <section class="ovrflw-y sm-padding sm-margin shadow">
-                <h3>box4</h3>
+                <h3>@home version 2.0</h3>
                 <ul>
                     <li></li>
                 </ul>
