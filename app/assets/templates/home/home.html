@@ -61,6 +61,12 @@
             <section class="ovrflw-y sm-padding sm-margin shadow">
                 <h3>box4</h3>
                 <ul>
+                    Friends:
+      %br 
+      - current_user.friendships.each do |friendship| 
+        = friendship.friend.email
+        %br  
+        = friendship.workflow_state
                     <li></li>
                 </ul>
             </section>

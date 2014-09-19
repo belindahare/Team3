@@ -16,8 +16,7 @@
       Friends:
       %br 
       - current_user.friendships.each do |friendship| 
-        = friendship.friend.email
-        %br  
+        = friendship.friend.email  
         = friendship.workflow_state
     %br  
 
