@@ -2,14 +2,14 @@
 %br
 %div.row#users.shadow
   %h2.bg-dk-green.inline.col-md-4.high.no-margin.med-padding 
-    
-  %ul.no-margin.bg-white.block.col-md-8.high.med-padding.no-decoration
-    %li.no-decoration
-      Friends:
-      %br 
+    Friends:
+    %br
       - current_user.friendships.each do |friendship| 
         = friendship.friend.email  
         = friendship.workflow_state
+    
+  %ul.no-margin.bg-white.block.col-md-8.high.med-padding.no-decoration
+    %li.no-decoration
       %br
       - @users.each do |user|
         = user.email
@@ -21,7 +21,7 @@
           = link_to "Add Friend", friendships_path(friend_id: :user), method: :post
  
 
-    %li.no-decoration more words
+    %li.no-decoration 
 
 
 
