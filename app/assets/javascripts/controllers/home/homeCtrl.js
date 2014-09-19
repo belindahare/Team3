@@ -1,6 +1,6 @@
 angular.module("team3-ng-features")
 
-    .controller('homeCtrl', function($scope, $log, homeSvc, redditSvc) {
+    .controller('homeCtrl', function($scope, $log, $interval, homeSvc, redditSvc) {
         $scope.works = "This is just the beginning";
         $log.info("home controller is go");
 
@@ -49,6 +49,12 @@ angular.module("team3-ng-features")
 
             });
         };
+
+        $interval(function() {
+            $scope.date = new Date().getTime();
+        }, 1000);
+
+
 
     });
 

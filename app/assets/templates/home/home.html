@@ -6,6 +6,10 @@
         <!--<div class="inline col-md-3">link to random page</div>-->
     <!--</div>-->
 
+    <h1 class="text-right">
+        <div id="clock" class="inline text-left">{{date | date : "h:mm:ss"}}</div><span id="pm">{{date | date : "a"}}</span>
+    </h1>
+
     <article class="row lg-margin-top lg-margin">
         <div class="col-md-3 high">
             <form ng-submit="getTheReddit(subRedditName)" action="">

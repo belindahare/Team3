@@ -184,10 +184,10 @@
 .v-tall {
   font-size: 24px; }
 
-.cl-white {
+.cl-lightGreen {
   color: #eeeeee; }
 
-.cl-white-hover:hover {
+.cl-lightGreen-hover:hover {
   color: #eeeeee; }
 
 .cl-purple {
@@ -203,10 +203,10 @@
   color: #426262; }
 
 .cl-light-green {
-  color: #ccdddd; }
+  color: #eeeeee; }
 
 .cl-light-green-hover:hover {
-  color: #ccdddd; }
+  color: #eeeeee; }
 
 .cl-green {
   color: #aacccc; }
@@ -226,7 +226,7 @@
 .cl-black-hover:hover {
   color: black; }
 
-.bg-white {
+.bg-lightGreen {
   background-color: rgba(238, 238, 238, 0.35); }
 
 .bg-dk-green {
@@ -271,10 +271,19 @@ body {
   height: 100px; }
 
 #users {
-  width:92%;
-  margin-left:4%;
+  width: 90%;
+  margin-left: 5%;
   height: 150px; }
 
+h1 .logo {
+  font-size: 1.5em;
+  float: right; }
+
+.holder #clock {
+  font-size: 75px;
+  width: 225px; }
+.holder #pm {
+  font-size: 20px; }
 .holder .social {
   height: 50px; }
 .holder article {
@@ -283,31 +292,18 @@ body {
   .holder article form input {
     background-color: rgba(0, 0, 0, 0.4);
     border: none; }
-  .holder article section h3 {
-    height: 15px; }
-  .holder article section ul {
-    min-height: 219px;
-    max-height: 220px; }
+  .holder article section {
+    min-height: 249px;
+    max-height: 250px; }
     .holder article section ul li {
       list-style-type: none; }
       .holder article section ul li img {
         width: 150px; }
-  .holder article section #bigUl {
-    min-height: 0;
-    max-height: 214px; }
-  .holder article section #bigHead {
-    height: 50px; }
 .holder footer {
   position: absolute;
   bottom: 0px;
   height: 75px; }
 
-.logo{
-  font-size:4em;
-  color:white;
-  margin-top:-20px;
-  float:right;
-}
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */
