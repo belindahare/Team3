@@ -1,7 +1,7 @@
 == README
 
 This was the last team project we completed at The Iron Yard.  It's purpose was to teach the front-end developers and the Ruby on Rails developers how to integrate their work.  The application was not required to be finished, it only required that we learn how to work with the new languages and figure out what part each of us would play in the development.
-
+The application was made as a sort of landing page, to be used when a new tab was opened.  It included updates from reddit, github, etc. and also originally allowed users to sign up and connect as friends- once logged in, a user would be able to post their status as available or unavailable and their list of friends would be able to see that information.
 To run locally:
   clone the repository
   install bower
